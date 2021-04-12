@@ -1,0 +1,19 @@
+<p-toast></p-toast>
+<div id="depiction-viewport" #viewport>
+    <div class="input-group-container" #inputs>
+        <h2 class="depictor-label">Depictor</h2>
+
+        <div class="ui-grid-row">
+            <div class="field-input">
+                <span>Smiles: </span>
+                <input type="text" pInputText [(ngModel)]="smiles"> 
+            </div>
+            <p-button class="field-input" label="Depict" [disabled]="depicting" (onClick)="depict()"></p-button>
+        </div>
+    </div>
+    
+    <div class="image-results-container" *ngIf="imageData">
+        <div class="ui-grid-row">
+            <div id="depiction-image" [innerHtml]="imageData"> </div>
+        </div>
+</div>
