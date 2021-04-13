@@ -1,4 +1,6 @@
-# Tools
+# Depictor UI
+
+This project serves as a companion to the depictor, being used to generated depictions of molecules using [SMILES](https://wikipedia.org/wiki/Simplified_molecular-input_line-entry_system). Note that in order to function, the depictor MUST be deployed to port 8080.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
